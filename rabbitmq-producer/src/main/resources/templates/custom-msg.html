@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form role="form" th:action="@{/custom-message}" method="get">
+    <div>
+        <input type="text" name="message" id="message" placeholder="message" />
+    </div>
+    <div>
+        <input type="text" name="priority" id="priority" placeholder="priority" />
+    </div>
+    <div>
+        <input type="text" name="secret" id="secret" placeholder="secret" />
+    </div>
+    <button type="submit">Send</button>
+</form>
+</body>
+</html>
